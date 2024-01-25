@@ -1,20 +1,27 @@
 import { Box, Container, Typography } from '@mui/material'
-import React from 'react'
+import React, { useEffect } from 'react'
 import logo from '../../imgs/Logo.png'
 import style from './style.module.css'
 import icon from '../../imgs/footer.png'
+import AOS from 'aos'
+import 'aos/dist/aos.css'
 const Footer = () => {
+    useEffect(()=>{
+        AOS.init({
+          duration: 2000
+        })
+      },[])
     return (
         <Container sx={{ width: '100%', display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', color: 'white', position: 'relative', flexWrap: 'wrap' }}>
             <Box className={style.footerRight} sx={{ width: '100%', height: '50vh', display: 'flex', justifyContent: 'space-around', alignItems: 'center', zIndex: '6' }}>
 
                 <Box>
-                    <img src={logo} alt="" className={style.footerLogo} />
+                    <img src={logo} alt="" className={style.footerLogo} data-aos='fade-right'/>
                 </Box>
 
                 <Box sx={{ display: 'flex', gap: 20, flexWrap: 'wrap' }}>
 
-                    <Box className={style.footerRespon}>
+                    <Box className={style.footerRespon} data-aos='fade-left'>
                         <Typography variant='h5'>
                             Social
                         </Typography>
@@ -24,7 +31,7 @@ const Footer = () => {
                         </Typography>
                     </Box>
 
-                    <Box sx={{ flexDirection: 'column' }} className={style.footerRespon}>
+                    <Box sx={{ flexDirection: 'column' }} className={style.footerRespon} data-aos='fade-right'>
                         <Typography variant='h5'>
                             Quick Links
                         </Typography>
@@ -41,7 +48,7 @@ const Footer = () => {
                         </Typography>
                     </Box>
 
-                    <Box className={style.footerRespon}>
+                    <Box className={style.footerRespon} data-aos='fade-left'>
                         <Typography variant='h5'>
                             Legal
                         </Typography>

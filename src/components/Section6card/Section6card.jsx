@@ -1,14 +1,21 @@
 import { Box, Container, Typography } from '@mui/material'
-import React from 'react'
+import React, { useEffect } from 'react'
 import style from './style.module.css'
 import icon from '../../imgs/sec6icon.png'
 import icon2 from '../../imgs/close.png'
+import AOS from 'aos'
+import 'aos/dist/aos.css'
 const Section6card = () => {
+    useEffect(()=>{
+        AOS.init({
+          duration: 2000
+        })
+      },[])
   return (
     <Container  sx={{width:'100%',display:'flex',justifyContent:'center',alignItems:'center',flexWrap:'wrap',gap:2,mt:5}}>
 
 
-<Box className={style.box}>
+<Box className={style.box}  data-aos='fade-right'>
     <Box sx={{p:2}}>
     <Typography variant='h6'>
 STARTER
@@ -73,7 +80,7 @@ Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.
 
 
 
-<Box className={style.box}>
+<Box className={style.box} data-aos='fade-left'>
     <Box sx={{p:2}}>
     <Typography variant='h6'>
 STARTER
@@ -136,7 +143,7 @@ Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.
 
 
 
-<Box className={style.box}>
+<Box className={style.box}  data-aos='fade-right'>
     <Box sx={{p:2}}>
     <Typography variant='h6'>
 STARTER

@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { Box, Stack, Typography, Container } from '@mui/material'
 import insta from '../../imgs/insta.png'
 import tiktok from '../../imgs/tiktok.png'
@@ -7,25 +7,32 @@ import tinder from '../../imgs/tinder.png'
 import style from './style.module.css'
 import imge from '../../imgs/section2.png'
 import Button from '../Button/Button'
+import AOS from 'aos'
+import 'aos/dist/aos.css'
 
-const section2 = () => {
+const Section2 = () => {
+  useEffect(()=>{
+    AOS.init({
+      duration: 2000
+    })
+  },[])
   return (
     <>
-      <Container className={style.sec3} width='100%' sx={{ mt: 2, display: 'flex', justifyContent: 'center', alignItems: 'center', flexWrap: 'wrap' }}>
-        <Typography variant='p' sx={{ fontWeight: '500', textAlign: 'center', color: 'white' }}>
+      <Container className={style.sec3} width='100%' sx={{ mt: 2, display: 'flex',flexDirection:'column', justifyContent: 'center', alignItems: 'center', flexWrap: 'wrap' }}>
+        <Typography variant='p' sx={{ fontWeight: '500', textAlign: 'center', color: 'white' ,display:'block'}} data-aos='zoom-in'>
           As Seen On
         </Typography>
-        <Box sx={{ color: 'white', display: 'flex', justifyContent: 'center', flexWrap: 'wrap' }}>
+        <Box sx={{ color: 'white', display: 'flex', justifyContent: 'center', flexWrap: 'wrap' }} data-aos='zoom-in'>
           <img src={insta} className={style.imgs} />
           <img src={tiktok} className={style.imgs} />
           <img src={linkdin} className={style.imgs} />
           <img src={tinder} className={style.imgs} />
         </Box>
-        <Box sx={{ mt: 3, width: '100%', display: 'flex', alignItems:'center',  flexWrap: 'wrap' }}>
-          <Box className='col-lg-6 col-12'>
+        <Box sx={{ mt: 3, width: '100%', display: 'flex', alignItems:'center',  flexWrap: 'wrap' }} >
+          <Box className='col-lg-6 col-12' data-aos='fade-right'>
             <img src={imge} alt="" className={style.section2imge} />
           </Box>
-          <Box className='col-lg-6 col-12'>
+          <Box className='col-lg-6 col-12' data-aos='fade-left'>
             <div className={style.section2shado}>
             </div>
             <Box >
@@ -46,4 +53,4 @@ const section2 = () => {
   )
 }
 
-export default section2
+export default Section2

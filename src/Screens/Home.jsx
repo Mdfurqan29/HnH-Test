@@ -14,7 +14,7 @@ import Footer from '../components/Footer/Footer'
 
 const Home = () => {
   return (
-    <Box sx={{ width: '100%', minHeight: '100vh', backgroundColor: 'black' }}>
+    <Box sx={{ width: '100%', minHeight: '100vh', backgroundColor: 'black',overflow:'hidden' }}>
       <NavScrollExample />
       <SectionOne />
       <Section2 />
