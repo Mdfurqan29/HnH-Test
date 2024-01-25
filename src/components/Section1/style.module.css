@@ -1,0 +1,79 @@
+.SectionOneMain{
+    position: relative;
+}
+.One{
+    width: 50%;
+    margin-top: 100px;
+}
+.One::after{
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    width: 5%;
+    left: 10%;
+    box-shadow: 0px 0px 150px 100px #eaa316;
+    margin-top: 150px;
+}
+.content{
+position: relative;
+left: 22%;
+z-index: 1;
+margin-left: 25%;
+
+font-weight: bolder;
+}
+.contentP{
+    position: relative;
+z-index: 1;
+left: 22%;
+}
+.button{
+position: relative;
+padding: 10px;
+border-radius: 5px;
+margin-left: 25%;
+outline: none;
+border: none;
+background:linear-gradient(to right,#FC4A1A,#F7B733);
+font-weight: 500;
+z-index: 12;
+color: white;
+}
+.rightSideMain{
+    margin-top: 70px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.rightSideMain::after{
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    width: 5%;
+    right: 12%;
+    top: 30%;
+    box-shadow: 0px 0px 120px 100px #009FE3;
+    z-index: 0;
+    margin-top: 150px;
+}
+.main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+   flex-wrap: wrap;
+
+}
+.div1{
+display: flex;
+gap: 15px;
+justify-content: center;
+align-items: center;
+flex-wrap: wrap;
+position: relative;
+}
+.rightsideImgs{
+    position: relative;
+width: 150px;
+z-index: 1;
+}

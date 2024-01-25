@@ -1,0 +1,15 @@
+.contant{
+color: white;
+background-color: rgba(128, 128, 128, 0.161);
+backdrop-filter: blur(10px);
+
+}
+.header{
+    color: white;
+    background-color: rgba(128, 128, 128, 0.161);
+    backdrop-filter: blur(10px);
+    
+}
+.main{
+    margin-top: 10px;
+}

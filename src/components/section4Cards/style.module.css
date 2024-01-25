@@ -1,0 +1,10 @@
+.cardsimg{
+    border-radius: 10px;
+}
+
+.icon{
+    position: absolute;
+    top: 72%;
+    left: 36%;
+    transform: translateY(-50%);
+}

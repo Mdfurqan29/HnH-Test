@@ -1,0 +1,14 @@
+.boxShado::after{
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    width: 5%;
+    right: 12%;
+    top: 0%;
+    box-shadow: 0px 0px 120px 100px #009FE3;
+    z-index: 0;
+    margin-top: 150px;
+}
+.boxShado{
+    margin-top: 10px;
+}

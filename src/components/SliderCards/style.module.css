@@ -1,0 +1,28 @@
+.card{
+    width: 280px;
+    height: 260px;
+    background-color: rgba(128, 128, 128, 0.161);
+    backdrop-filter: blur(10px);
+margin-top: 20px;
+position: relative;
+z-index: 2;
+border-radius: 10px;
+}
+.cardsec1{
+    position: relative;
+    z-index: 3;
+    padding-left: 10px;
+}
+.cardsec2{
+width: 100%;
+margin-top: 10px;
+display: 'flex';
+}
+.cardsecimg{
+    width: 40px;
+    height: 40px;
+}
+.sliderimg3{
+    width: 40px;
+    height: 40px;
+}

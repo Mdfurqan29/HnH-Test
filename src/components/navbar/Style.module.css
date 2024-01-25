@@ -1,0 +1,31 @@
+.main{
+    margin-top: 10px;
+}
+.list{
+    color: white;
+    margin-left: 30px;
+}
+.list:hover{
+    color: white!important;
+}
+.button{
+    color: orange;
+    border: 1px solid orange;
+    padding: 7px;
+    font-weight:500;
+}
+.button:hover{
+    color: orange;
+    border: 1px solid orange;
+    padding: 7px;
+    background-color: transparent;
+}
+
+.loginButton{
+    background-color: transparent;
+    border: none;
+    margin-right: 20px;
+}
+.loginButton:hover{
+    background-color: transparent;
+}
