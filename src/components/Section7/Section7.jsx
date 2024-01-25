@@ -19,8 +19,6 @@ Level Up Your Profile with AI Magic! Reinvent Yourself and Shine with AI-Powered
 </Box>
 
 </Box>
-<div className={style.BoxShado2}>
-                </div>
     </Container>
   )
 }

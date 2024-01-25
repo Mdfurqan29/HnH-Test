@@ -1,18 +1,111 @@
-.footerLogo{
+.footerLogo {
     width: 150px;
 }
-.hr{
-        color: gray;
-        width: 80%;
+
+.hr {
+    color: gray;
+    width: 80%;
+}
+
+.BoxShado::after {
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    width: 5%;
+    bottom: 0%;
+    left: 10%;
+    box-shadow: 0px 0px 200px 100px #eaa316;
+    z-index: 0;
+}
+
+
+
+
+
+
+/* Tablets */
+@media only screen and (min-width: 767px) and (max-width: 1023px) {
+    .footerRespon {
+        flex: 33% !important;
     }
 
-    .BoxShado::after{
-        content: "";
-        position: absolute;
-        border-radius: 50%;
-        width: 5%;
-        bottom: 0%;
-       left: 10%;
-        box-shadow: 0px 0px 200px 100px #eaa316;
-        z-index: 0;
+    .footerLogo {
+        display: block;
+        margin: 20px auto;
     }
+
+    .footerRight {
+        display: block !important;
+        height: 100% !important;
+
+    }
+
+    .footerRight div:nth-child(2) {
+        gap: 0px;
+    }
+
+}
+
+/* 1300px Resolution */
+@media only screen and (min-width: 1024px) and (max-width: 1469px) {
+    
+}
+
+/* 1600px Resolution */
+@media only screen and (min-width: 1470px) and (max-width: 1800px) {
+   
+}
+
+@media only screen and (min-width: 1801px) and (max-width:5500px) {}
+
+/* Mobile */
+@media (min-width: 481px) and (max-width: 767px) {
+    .footerRespon {
+        flex: 50% !important;
+    }
+
+    .footerRight {
+        display: block !important;
+    }
+    .footerRespon {
+        flex: 50% !important;
+    }
+
+    .footerLogo {
+        display: block;
+        margin: 20px auto;
+    }
+
+    .footerRight {
+        display: block !important;
+        height: 100% !important;
+
+    }
+
+    .footerRight div:nth-child(2) {
+        gap: 0px;
+    }
+}
+
+/* Mobile */
+@media (min-width: 320px) and (max-width: 480px) {
+    .footerRespon {
+        flex: 50% !important;
+    }
+
+    .footerLogo {
+        display: block;
+        margin: 20px auto;
+    }
+
+    .footerRight {
+        display: block !important;
+        height: 100% !important;
+
+    }
+
+    .footerRight div:nth-child(2) {
+        gap: 0px;
+    }
+
+}

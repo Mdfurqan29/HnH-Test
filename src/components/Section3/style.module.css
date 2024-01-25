@@ -1,18 +1,19 @@
-.section3rightimg{
-    width: 400px;
+.section3rightimg {
+    max-width: 90%;
 }
-.section3rleftimg1{
+
+.section3rleftimg1 {
     width: 80px;
     height: 80px;
 }
 
-.section3shadow::after{
+.section3shadow::after {
     content: "";
     position: absolute;
     border-radius: 50%;
     width: 5%;
-   bottom: 40%;
-   left: 30%;
-    box-shadow: 0px 0px 200px 100px #eaa316;
+    bottom: 40%;
+    left: 30%;
+    box-shadow: 0px 0px 450px 70px #eaa316;
     z-index: 0;
 }

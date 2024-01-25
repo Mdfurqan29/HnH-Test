@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+*{
+    font-family: 'Poppins', sans-serif;
+}
+
+.accordion-item{
+    border-radius: 12px;
+    opacity: 0.08;
+    color: white !important;
+    background:  linear-gradient(98deg, #FC4A1A 0%, #F7B733 100%) !important;
+}
+.accordion-item .accordion-button{
+    background: transparent;
+  
+}
+.accordion-body{
+    color: white !important;
+}

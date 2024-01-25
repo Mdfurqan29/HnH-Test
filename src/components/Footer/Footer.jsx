@@ -5,18 +5,16 @@ import style from './style.module.css'
 import icon from '../../imgs/footer.png'
 const Footer = () => {
     return (
-        <Container sx={{ width: '100%', height: '50vh', display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center',color:'white',position:'relative'}}>
-      <div className={style.BoxShado}>
-                </div>
-            <Box sx={{ width: '100%', height: '50vh', display: 'flex', justifyContent: 'space-around', alignItems: 'center',flexWrap:'wrap',zIndex:'6'  }}>
+        <Container sx={{ width: '100%', display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', color: 'white', position: 'relative', flexWrap: 'wrap' }}>
+            <Box className={style.footerRight} sx={{ width: '100%', height: '50vh', display: 'flex', justifyContent: 'space-around', alignItems: 'center', zIndex: '6' }}>
 
                 <Box>
                     <img src={logo} alt="" className={style.footerLogo} />
                 </Box>
 
-                <Box sx={{display:'flex',gap:20}}>
+                <Box sx={{ display: 'flex', gap: 20, flexWrap: 'wrap' }}>
 
-                    <Box >
+                    <Box className={style.footerRespon}>
                         <Typography variant='h5'>
                             Social
                         </Typography>
@@ -26,7 +24,7 @@ const Footer = () => {
                         </Typography>
                     </Box>
 
-                    <Box sx={{flexDirection:'column'}}>
+                    <Box sx={{ flexDirection: 'column' }} className={style.footerRespon}>
                         <Typography variant='h5'>
                             Quick Links
                         </Typography>
@@ -43,7 +41,7 @@ const Footer = () => {
                         </Typography>
                     </Box>
 
-                    <Box>
+                    <Box className={style.footerRespon}>
                         <Typography variant='h5'>
                             Legal
                         </Typography>
@@ -52,7 +50,7 @@ const Footer = () => {
                         </Typography>
                         <br />
                         <Typography variant='p'>
-                        Privacy policy
+                            Privacy policy
                         </Typography>
                     </Box>
 
@@ -61,8 +59,8 @@ const Footer = () => {
             </Box>
             <hr className={style.hr} />
             <Typography variant='p'>
-            © 2023 THENEXTPHOTO.COM All rights reserved.
-                        </Typography>
+                © 2023 THENEXTPHOTO.COM All rights reserved.
+            </Typography>
         </Container>
     )
 }
