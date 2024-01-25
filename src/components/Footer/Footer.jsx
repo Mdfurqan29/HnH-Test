@@ -14,7 +14,7 @@ const Footer = () => {
 
                 <Box sx={{ display: 'flex', gap: 20, flexWrap: 'wrap' }}>
 
-                    <Box className={style.footerRespon} data-aos='fade-left'>
+                    <Box className={style.footerRespon} >
                         <Typography variant='h5'>
                             Social
                         </Typography>
