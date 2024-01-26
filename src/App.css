@@ -4,15 +4,31 @@
 }
 
 .accordion-item{
-    border-radius: 12px;
-    opacity: 0.08;
     color: white !important;
-    background:  linear-gradient(98deg, #FC4A1A 0%, #F7B733 100%) !important;
-}
-.accordion-item .accordion-button{
-    background: transparent;
-  
+    background-color: rgba(128, 128, 128, 0.293);
+backdrop-filter: blur(10px);
+border: none !important;
 }
 .accordion-body{
     color: white !important;
+}
+.accordion-button{
+    color: white !important;
+    background-color: rgba(128, 128, 128, 0.293);
+backdrop-filter: blur(10px);
+}
+
+.text-white {
+    /* --bs-text-opacity: 1; */
+    opacity: 100;
+    color: white !important;
+}
+.accordion-button:not(.collapsed) {
+    color: var(--bs-accordion-active-color);
+    background-color: rgba(128, 128, 128, 0.293) !important;
+    box-shadow: inset 0 calc(-1 * var(--bs-accordion-border-width)) 0 var(--bs-accordion-border-color);
+}
+
+.Accordion-P{
+padding: 20px !important;
 }

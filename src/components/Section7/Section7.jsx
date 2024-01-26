@@ -24,7 +24,7 @@ const Section7 = () => {
         <Box>
           <button className={style.button}>Learn More</button>
         </Box>
-
+      <img src={imge} width="100%" alt="" />
       </Box>
     </Container>
   )

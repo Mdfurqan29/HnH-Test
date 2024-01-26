@@ -22,6 +22,7 @@
     z-index: 0;
     margin-top: 150px;
 }
+
 /* 883 */
 
 .One {
@@ -42,6 +43,16 @@
     /* left: 22%; */
 }
 
+.CenterImg {
+    position: absolute;
+    width: 238px;
+    z-index: 3;
+    top: 12%;
+}
+
+.main {
+    position: relative;
+}
 .button {
     position: relative;
     padding: 10px;
@@ -118,7 +129,7 @@
     }
 }
 
-/* Mobile */
+
 @media (min-width: 320px) and (max-width: 480px) {
     .content {
         left: 0%;
@@ -133,9 +144,19 @@
         margin-left: 0%;
 
     }
-  
+
 
 }
+
+@media (min-width: 0px) and (max-width: 511px) {
+
+    .CenterImg
+     {
+        display: none;
+    }
+
+}
+
 @media (min-width: 320px) and (max-width: 840px) {
     .SectionOneMain::after {
         content: "";
